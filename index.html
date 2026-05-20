@@ -3,114 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jigisha Narayane — Web Developer</title>
+    <title>To Do List</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
 
-    <!-- NAV -->
-    <nav>
-      <div class="nav-name">Jigisha Narayane</div>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <h1>My To Do List</h1>
 
-    <!-- HEADER -->
-    <header>
-      <h1>Jigisha Narayane</h1>
-      <p>CSE Student | Building for the Web | Open to Internships</p>
-    </header>
-
-    <!-- ABOUT -->
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I am a Computer Science student with a passion for building things on the web. I am currently learning HTML, CSS, and JavaScript.</p>
-    </section>
-
-    <!-- SKILLS -->
-    
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="skills-grid">
-    <span class="skill-badge">HTML</span>
-    <span class="skill-badge">CSS</span>
-    <span class="skill-badge">JavaScript</span>
-    <span class="skill-badge">C / C++</span>
-    <span class="skill-badge">Responsive Design</span>
-    <span class="skill-badge">Git & GitHub</span>
-  </div>
-</section>
-
-    <!-- PROJECTS -->
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="projects-grid">
-
-    <div class="project-card">
-      <h3>Portfolio Website</h3>
-      <p>Personal portfolio built with HTML, CSS and JavaScript. Features sticky navigation, skill badges, smooth scrolling and live JavaScript demo.</p>
-      <div class="project-links">
-        <a href="https://jigishanarayane.github.io" class="btn" target="_blank">Live Demo</a>
-        <a href="https://github.com/jigishanarayane/jigishanarayane.github.io" class="btn btn-outline" target="_blank">GitHub</a>
+      <!-- INPUT -->
+      <div class="input-box">
+        <input type="text" id="task-input" placeholder="Add a new task..." />
+        <button id="add-btn">Add</button>
       </div>
+
+      <!-- FILTERS -->
+      <div class="filters">
+        <button class="filter-btn active" id="all-btn">All</button>
+        <button class="filter-btn" id="active-btn">Active</button>
+        <button class="filter-btn" id="completed-btn">Completed</button>
+      </div>
+
+      <!-- TASK LIST -->
+      <ul id="task-list"></ul>
+
+      <!-- FOOTER -->
+      <div class="footer">
+        <span id="task-count">0 tasks remaining</span>
+        <button id="clear-btn">Clear Completed</button>
+      </div>
+
     </div>
 
-    <div class="project-card">
-      <h3>Quiz App</h3>
-      <p>Interactive quiz app with 5 questions, score tracking, instant right/wrong answer feedback and a results screen. Built with vanilla JavaScript.</p>
-      <div class="project-links">
-        <a href="https://jigishanarayane.github.io/quiz-app" class="btn" target="_blank">Live Demo</a>
-        <a href="https://github.com/jigishanarayane/quiz-app" class="btn btn-outline" target="_blank">GitHub</a>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <h3>Weather App</h3>
-      <p>Real-time weather app using OpenWeatherMap API. Shows temperature, humidity and wind speed with dynamic backgrounds based on weather conditions.</p>
-      <div class="project-links">
-        <a href="https://jigishanarayane.github.io/weather-app" class="btn" target="_blank">Live Demo</a>
-        <a href="https://github.com/jigishanarayane/weather-app" class="btn btn-outline" target="_blank">GitHub</a>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <h3>To Do List App</h3>
-      <p>Task management app with add, delete, complete and filter features. Smooth animations and clean UI. Built with JavaScript arrays and DOM manipulation.</p>
-      <div class="project-links">
-        <a href="https://jigishanarayane.github.io/todo-app" class="btn" target="_blank">Live Demo</a>
-        <a href="https://github.com/jigishanarayane/todo-app" class="btn btn-outline" target="_blank">GitHub</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-  </div>
-</section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Email: jigishapn31@gmail.com</p>
-    </section>
-   
-
-    <!-- INTERACTIVE SECTION -->
-<section id="interactive">
-  <h2>JavaScript Live Demo</h2>
-  <p>Click the button to see JavaScript in action:</p>
-  <div class="counter-box">
-    <h3 id="counter-display">0</h3>
-    <button id="count-btn">Click Me!</button>
-    <button id="reset-btn">Reset</button>
-  </div>
-</section>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
   </body>
 </html>
